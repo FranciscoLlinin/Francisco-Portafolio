@@ -192,6 +192,7 @@ body.light-theme{
   max-width: 968px;
   margin-left: 1rem;
   margin-right: 1rem;
+  color: #FFFFFF
 }
 
 .grid {
@@ -230,7 +231,7 @@ body.light-theme{
   top: 0;
   left: 0;
   width: 100%;
-  background-color: var(--body-color);
+  background-color: var(--first-color);
   z-index: var(--z-fixed);
   transition: .4s; /* for light mode animation */
 }
@@ -243,14 +244,17 @@ body.light-theme{
 }
 
 .nav__logo{
-  color: var(--first-color);
+  color:  #FFFFFF;
   font-weight: var(--font-medium);
   transition: .4s;
 }
 
 .nav__logo:hover{
-  color: var(--first-color-alt);
+  color:  #FFFFFF;
+  font-weight: var(--biggest-font-size);
 }
+
+
 
 .nav__menu{
   position: fixed;
