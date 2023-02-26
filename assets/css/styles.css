@@ -617,6 +617,7 @@ body.light-theme{
 
 .skills__level{
   font-size: var(--tiny-font-size);
+  color: var(--text-color-light)
 }
 
 
