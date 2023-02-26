@@ -105,7 +105,7 @@ button {
 }
 
 img {
-  max-width: 100%;
+  max-width: 90%;
   height: auto;
 }
 
@@ -526,10 +526,8 @@ body.light-theme{
 }
 
 .about__image{
-  width: 220px;
-  border-radius: 1.5rem;
-  
-  
+  width: 120px;
+  border-radius: 2.5rem;
 }
 
 .about__data{
@@ -560,11 +558,13 @@ body.light-theme{
 
 .about__subtitle{
   font-size: var(--tiny-font-size);
+  color: var(--text-color-light)
   
 }
 
 .about__description{
   margin-bottom: 2rem;
+  color: var(--text-color-light);
 }
 
 
