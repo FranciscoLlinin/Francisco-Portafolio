@@ -684,7 +684,7 @@ body.light-theme{
 }
 
 .services__modal-title{
-  font-size: var(--h3-font-size);
+  font-size: var(--h2-font-size);
   color: var(--first-color);
   margin-bottom: 1rem;
 }
@@ -692,6 +692,7 @@ body.light-theme{
 .services__modal-description{
   font-size: var(--small-font-size);
   margin-bottom: 2rem;
+  color: var(--title-color);
 }
 
 .services__modal-list{
@@ -712,6 +713,7 @@ body.light-theme{
 
 .services__modal-info{
   font-size: var(--small-font-size);
+  color: var(--text-color-light)
 }
 
 .services__modal-close{
