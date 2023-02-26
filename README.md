@@ -1,2 +1,2 @@
-# Responsive-Portafolio
-Responsive Portafolio with ligth and dark theme
+# Personal-Portafolio
+Responsive Portafolio using HTML, CSS and JavaScript
