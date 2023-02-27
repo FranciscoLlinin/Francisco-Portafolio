@@ -51,6 +51,15 @@ function activeWork(){
 }
 
 linkWork.forEach(l => l.addEventListener('click', activeWork))
+
+/*=============== FULL SCREEN IMAGE ===============*/
+
+var imagen = document.getElementById("miimagen");
+
+imagen.addEventListener("dblclick", function(e){
+  getFullscreen(this);
+},false);
+
 /*=============== SWIPER TESTIMONIAL ===============*/
 
 let swiperTestimonial = new Swiper('.testimonial__container', {

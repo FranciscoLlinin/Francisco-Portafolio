@@ -476,11 +476,28 @@
 
                 <div class="work__container container grid">
                     <div class="work__card mix web">
-                        <img src="assets/img/work1.png" alt="" class="work__image">
+                        <img src="assets/img/work1.png" id="miimagen" alt="Imagen de Ejemplo" class="work__image">
                         <h3 class="work__title">My icard</h3>
-                        <a href="#" class="work__button">
-                            Repositorio <i class='bx bx-right-arrow-alt work__icon'></i>
-                        </a>
+                       
+                        <span class="services__button">
+                            Ver más <i class='bx bx-right-arrow-alt services__icon'></i>
+                        </span>
+                        <div class="services__modal">
+                            <div class="services__modal-content">
+                                <i class='bx bx-x services__modal-close' ></i>
+                                <h3 class="services__modal-title"> My icard</h3>
+                                
+                                <p class="services__modal-description">
+                                    Sistema para la automatización de pedidos bajo el modelo SAAS
+                                </p>
+                                <img src="assets/img/work1.png" alt=" " width= 10000px >
+                                <a href="#" class=" button button-ghost">
+                                    Repositorio <i class='bx bx-right-arrow-alt work__icon'></i>
+                                </a>
+
+                            </div>
+                        </div>
+                        
                     </div>
 
 
@@ -529,18 +546,16 @@
 
             <!--=============== TESTIMONIALS ===============-->
             <section class="testimonial section">
-                <span class="section__subtitle">My clients say</span>
-                <h2 class="section__title">Testimonial</h2>
+                <span class="section__subtitle">Referencias</span>
+                <h2 class="section__title">Personas de referencia laboral</h2>
 
                 <div class="testimonial__container container swiper">
                     <div class="swiper-wrapper">
                         <div class="testimonial__card swiper-slide">
-                            <img src="assets/img/testimonial1.png" alt="" class="testimonial__img">
-                            <h3 class="testimonial__name">José Delgado</h3>
-                            <p class="testimonial__description">
-                                A really good job, all aspects of the project were done well and
-                                followed step by step and with good results.
-                            </p>
+                            <img src="assets/img/testimonial1.PNG" alt="" class="testimonial__img">
+                            <h3 class="testimonial__name">Ing. Mauricio Criollo</h3>
+                            <p class="testimonial__description">060474135-5 </p>
+                            <p class="testimonial__description">0992839888 </p>
                         </div>
 
                         <div class="testimonial__card swiper-slide">
@@ -569,69 +584,41 @@
 
             <!--=============== CONTACT ===============-->
             <section class="contact section" id="contact">
-                <span class="section__subtitle">Get in touch</span>
-                <h2 class="section__title">Contact me</h2>
+                <span class="section__subtitle">Mantengamonos en contacto</span>
+                <h2 class="section__title">Contáctame</h2>
 
-                <div class="contact__container container grid">
-                    <div class="contact__content">
-                        <h3 class="contact__title">Talk to me</h3>
+                
+                    
+                        <h3 class="contact__title">Escribeme</h3>
 
-                        <dic class="contact__info">
+                        <div class="contact__info">
                             <div class="contact__card">
                                 <i class='bx bx-mail-send contact__card-icon'></i>
                                 <h3 class="contact__card-title">Email</h3>
-                                <span class="contact__card-data">user@gmail.com</span>
+                                <span class="contact__card-data">pacoflores1999@gmail.com</span>
 
-                                <a href="mailto:user@gmail.com" target="_blank" class="contact__button">
-                                    Write me <i class='bx bx-right-arrow-alt contact__button-icon'></i>
+                                <a href="mailto:pacoflores1999@gmail.com" target="_blank" class="contact__button">
+                                    Escribeme <i class='bx bx-right-arrow-alt contact__button-icon'></i>
                                 </a>
                             </div>
 
                             <div class="contact__card">
                                 <i class='bx bxl-whatsapp contact__card-icon' ></i>
                                 <h3 class="contact__card-title">Whatsapp</h3>
-                                <span class="contact__card-data">+59 123439887</span>
+                                <span class="contact__card-data">+593 0998129960</span>
 
-                                <a href="https://api.whatsapp.com/send?phone=59123439887" target="_blank" class="contact__button">
+                                <a href="" target="_blank" class="contact__button">
                                     Write me <i class='bx bx-right-arrow-alt contact__button-icon'></i>
                                 </a>
                             </div>
 
-                            <div class="contact__card">
-                                <i class='bx bxl-messenger contact__card-icon' ></i>
-                                <h3 class="contact__card-title">Messenger</h3>
-                                <span class="contact__card-data">user.fb123</span>
+                            
+                        </div>
+                    
 
-                                <a href="https://m.me/francisco" target="_blank" class="contact__button">
-                                    Write me <i class='bx bx-right-arrow-alt contact__button-icon'></i>
-                                </a>
-                            </div>
-                        </dic>
-                    </div>
+                    
 
-                    <div class="contact__content">
-                        <h3 class="contact__title">Write me your project</h3>
-                        <form action="" class="contact__form">
-                            <div class="contact__form-div">
-                                <label for="" class="contact__form-tag">Names</label>
-                                <input type="text" placeholder="Insert your name" class="contact__form-input">
-                            </div>
-
-                            <div class="contact__form-div">
-                                <label for="" class="contact__form-tag">Mail</label>
-                                <input type="email" placeholder="Insert your email" class="contact__form-input">
-                            </div>
-
-                            <div class="contact__form-div contact__form-area">
-                                <label for="" class="contact__form-tag">Project</label>
-                                <textarea name="" id="" cols="30" rows="10" placeholder="Write your project" class="contact__form-input"></textarea>
-                            </div>
-
-                            <button class="button">Send Message</button>
-                        </form>
-                    </div>
-
-                </div>
+                
             </section>
         </main>
 

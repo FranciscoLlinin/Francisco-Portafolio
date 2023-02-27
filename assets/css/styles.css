@@ -822,6 +822,7 @@ body.light-theme{
 
 .testimonial__description{
   font-size: var(--small-font-size);
+  color: var(--text-color-light);
 }
 
 /* Swiper class */
@@ -835,8 +836,9 @@ body.light-theme{
 }
 /*=============== CONTACT ===============*/
 .contact__container{
-  row-gap: 3rem;
-  padding-bottom: 3rem;
+  row-gap: 1rem;
+  padding-bottom: 35rem;
+  display: grid;
 }
 
 .contact__title{
@@ -848,6 +850,7 @@ body.light-theme{
 .contact__info{
   display: grid;
   gap: 1rem;
+  column-gap: .75rem;
 }
 
 .contact__card{
@@ -855,6 +858,7 @@ body.light-theme{
   padding: 1rem;
   border-radius: .75rem;
   text-align: center;
+  column-gap: .75rem;
 
 }
 
