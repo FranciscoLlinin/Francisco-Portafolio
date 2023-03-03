@@ -4,15 +4,6 @@
 /*=============== VARIABLES CSS ===============*/
 :root {
   --header-height: 3.5rem;
-
-  /*========== Colors ==========*/
-  /*Color mode HSL(hue, saturation, lightness)*/
-  /*
-        Purple: hsl(250, 66%, 75%)
-        Blue: hsl(207, 90%, 72%)
-        Pink: hsl(356, 66%, 75%)
-        Teal: hsl(174, 63%, 62%)
-  */
   --first-hue: 250;
   --sat: 66%;
   --lig: 75%;
@@ -24,9 +15,7 @@
   --text-color-light: hsl(var(--second-hue), 4%, 55%);
   --body-color: hsl(var(--second-hue), 48%, 8%);
   --container-color: hsl(var(--second-hue), 32%, 12%);
-
   /*========== Font and typography ==========*/
-  /*.5rem = 8px | 1rem = 16px ...*/
   --body-font: 'Poppins', sans-serif;
   --biggest-font-size: 1.75rem;
   --h1-font-size: 1.5rem;
@@ -36,11 +25,9 @@
   --small-font-size: .813rem;
   --smaller-font-size: .75rem;
   --tiny-font-size: .625rem;
-
   /*========== Font weight ==========*/
   --font-medium: 500;
   --font-semibold: 600;
-
   /*========== z index ==========*/
   --z-tooltip: 10;
   --z-fixed: 100;
@@ -59,18 +46,15 @@
     --smaller-font-size: .813rem;
   }
 }
-
 /*=============== BASE ===============*/
 * {
   box-sizing: border-box;
   padding: 0;
   margin: 0;
 }
-
 html {
   scroll-behavior: smooth;
 }
-
 body,
 button,
 input,
@@ -78,61 +62,46 @@ textarea {
   font-family: var(--body-font);
   font-size: var(--normal-font-size);
 }
-
 body {
   background-color: var(--body-color);
   color: var(--text-color);
   transition: .4s; /* for light mode animation */
 }
-
 h1, h2, h3 {
   color: var(--title-color);
   font-weight: var(--font-semibold);
 }
-
 ul {
   list-style: none;
 }
-
 a {
   text-decoration: none;
 }
-
 button {
   cursor: pointer;
   border: none;
   outline: none;
 }
-
 img {
   max-width: 90%;
   height: auto;
 }
-
 /*=============== THEME ===============*/
 .change-theme{
   font-size: 1.25rem;
   cursor: pointer;
   transition: .3s;
 }
-
 .change-theme:hover{
   color:var(first-color);
-
 }
-/*========== Variables Dark theme ==========*/
-
+/*========== DARK THEME ==========*/
 body.light-theme{
   --title-color: hsl(var(--second-hue), 15%, 15%);
   --text-color: hsl(var(--second-hue), 8%, 35%);
   --body-color: hsl(var(--second-hue), 100%, 99%);
   --container-color: #fff;
 }
-
-/*========== 
-    Color changes in some parts of 
-    the website, in light theme
-==========*/
 
 .light-theme .scroll-header{
   box-shadow: 0 2px 4px hsla(0, 0%, 1%, .1);
@@ -192,7 +161,6 @@ body.light-theme{
   background-color: hsl(var(--second-hue), 8%, 44%);
 }
 
-
 /*=============== REUSABLE CSS CLASSES ===============*/
 .container {
   max-width: 968px;
@@ -231,7 +199,7 @@ body.light-theme{
   color: var(--text-color-light);
 }
 
-
+/* ============ BACKGROUND ========= */
 .circle{
   position: absolute;
   border-radius: 50%;
@@ -239,42 +207,36 @@ body.light-theme{
   animation: ripple 15s infinite;
   box-shadow: 0px 0px 1px 0px #508fb9;
 }
-
 .small{
   width: 200px;
   height: 200px;
   left: -100px;
   bottom: -100px;
 }
-
 .medium{
   width: 400px;
   height: 400px;
   left: -200px;
   bottom: -200px;
 }
-
 .large{
   width: 600px;
   height: 600px;
   left: -300px;
   bottom: -300px;
 }
-
 .xlarge{
   width: 800px;
   height: 800px;
   left: -400px;
   bottom: -400px;
 }
-
 .xxlarge{
   width: 1000px;
   height: 1000px;
   left: -500px;
   bottom: -500px;
 }
-
 .shade1{
   opacity: 0.2;
 }
@@ -308,7 +270,7 @@ body.light-theme{
   }
 }
 
-/*=============== HEADER & NAV===============*/
+/*=============== HEADER ===============*/
 .header{
   position: fixed;
   top: 0;
@@ -337,8 +299,6 @@ body.light-theme{
   font-weight: var(--biggest-font-size);
 }
 
-
-
 .nav__menu{
   position: fixed;
   bottom: 1rem;
@@ -363,7 +323,6 @@ body.light-theme{
   display: flex;
   border-radius: 5rem;
 }
-
 
 /* Active link */
 .active-link{
@@ -420,15 +379,12 @@ body.light-theme{
 
 .home__img{
   width: 100px;
-
 }
 
 .home__handle{
   justify-self: center;
   width: 50px;
   height: 50px;
-  
- 
 }
 
 .home__buttons{
@@ -615,6 +571,86 @@ body.light-theme{
   font-size: 1rem;
   color: var(--first-color);
 }
+
+.skills .bxl-html5{
+  font-size: 2.5rem;
+  color: var(--first-color);
+}
+
+.skills .bxl-css3{
+  font-size: 2.5rem;
+  color: var(--first-color);
+}
+
+.skills .bxl-javascript{
+  font-size: 2.5rem;
+  color: var(--first-color);
+}
+
+.skills .bxl-bootstrap{
+  font-size: 2.5rem;
+  color: var(--first-color);
+}
+
+.skills .bxl-angular{
+  font-size: 2.5rem;
+  color: var(--first-color);
+}
+
+.skills .bxl-react{
+  font-size: 2.5rem;
+  color: var(--first-color);
+}
+
+.skills .bxl-python{
+  font-size: 2.5rem;
+  color: var(--first-color);
+}
+.skills .bxl-nodejs{
+  font-size: 2.5rem;
+  color: var(--first-color);
+}
+
+.skills .bxl-postgresql{
+  font-size: 2.5rem;
+  color: var(--first-color)
+}
+
+.skills .bxl-django{
+  font-size: 2.5rem;
+  color: var(--first-color);
+}
+
+.skills .bxl-figma{
+  font-size: 2.5rem;
+  color: var(--first-color);
+}
+
+.skills .bxl-adobe{
+  font-size: 2.5rem;
+  color: var(--first-color);
+}
+
+.skills .bxl-sketch{
+  font-size: 2.5rem;
+  color: var(--first-color);
+}
+
+.skills .bxl-git{
+  font-size: 2.5rem;
+  color: var(--first-color);
+}
+.skills .bxl-trello{
+  font-size: 2.5rem;
+  color: var(--first-color);
+}
+
+.skills .bxl-visual-studio{
+  font-size: 2.5rem;
+  color: var(--first-color);
+}
+
+
 .skills__name{
   font-size: var(--normal-font-size);
   font-weight: var(--font-medium);
